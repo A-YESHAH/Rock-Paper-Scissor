@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="game.css" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <div id="game-ui">
+      <h2 id="heading">Choose Your Move:</h2>
+      <div class="buttons">
+        <button data-move="rock">✊ Rock</button>
+        <button data-move="paper">🤚 Paper</button>
+        <button data-move="scissors">✌️ Scissors</button>
+      </div>
+
+      <div id="choices">
+        <div class="choice-box" id="you">
+          <h3>You Chose:</h3>
+          <div class="choice-emoji" id="your-emoji"></div>
+          <p class="choice-text" id="your-choice"></p>
+        </div>
+        <div class="choice-box" id="computer">
+          <h3>Computer Chose:</h3>
+          <div class="choice-emoji" id="computer-emoji"></div>
+          <p class="choice-text" id="computer-choice"></p>
+        </div>
+      </div>
+
+      <div id="result">
+        <h3></h3>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
